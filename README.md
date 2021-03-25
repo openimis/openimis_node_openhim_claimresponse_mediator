@@ -1,1 +1,1 @@
-# openimis_node_openhim_mediators
+# openimis_node_openhim_claimresponse_mediators
