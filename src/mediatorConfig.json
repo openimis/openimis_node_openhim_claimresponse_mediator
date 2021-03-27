@@ -1,0 +1,36 @@
+
+{
+    "urn": "FHIR 4 valuated Claim mediator",
+    "version": "1.0.0",
+    "name": "Fhir 4 valuated claim Mediator",
+    "description": "Fhir 4 valuated claim mediator",
+    "defaultChannelConfig": [
+      {
+        "name": "Valuated claim mediator",
+        "urlPattern": "^/ClaimResponse",
+        "routes": [
+          {
+            "name": "claim route",
+            "host": "localhost",
+            "path": "/",
+            "port": "3009",
+            "primary": true,
+            "type": "http"
+          }
+        ],
+        "allow": ["admin"],
+        "methods": ["GET", "POST","PUT","DELETE"],
+        "type": "http"
+      }
+    ],
+    "endpoints": [
+      {
+        "name": "Valuated claim endpoint",
+        "host": "localhost",
+        "path": "/",
+        "port": "3009",
+        "primary": true,
+        "type": "http"
+      }
+    ]
+  }
